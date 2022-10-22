@@ -1,0 +1,99 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: cursive;
+     background: linear-gradient(45deg, #333, rgba(0, 0, 0, .3));
+     height: 100vh;
+}
+
+.container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 19px;
+}
+
+.board {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     max-width: 300px;
+     max-width: 0 auto;
+}
+
+.box {
+     min-width: 100px;
+     min-height: 100px;
+     font-size: 2.5rem;
+     border: 2px solid #333;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.title {
+     font-size: 2rem;
+     color: #fecf02;
+
+}
+
+.scores-display {
+     display: flex;
+     gap: 4rem;
+     justify-content: center;
+     align-items: center;
+}
+
+.playerOne,
+.playerTwo {
+     font-size: 2rem;
+     font-weight: 700;
+}
+
+.X_score {
+     color: rgb(185, 205, 9);
+}
+
+.O_score {
+     color: #02fee9;
+}
+
+.display {
+     font-size: 1.3rem;
+     font-weight: 600;
+     color: #fe8002;
+     text-align: center;
+     margin-top: .55em;
+     margin-bottom: .55em;
+}
+
+.playerX {
+     color: rgb(185, 205, 9);
+}
+
+.playerO {
+     color: #02fee9;
+}
+
+button#reset {
+     padding: .56rem 1.9rem;
+     border: 0;
+     border-radius: .3rem;
+     font-weight: 600;
+     font-size: 18px;
+     cursor: pointer;
+}
+
+.hide {
+     display: none;
+}
+
+.announce {
+     font-size: 1.4rem;
+}
